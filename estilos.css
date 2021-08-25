@@ -1,10 +1,19 @@
-body{
+body {
     background-color: aqua;
 }
-h1{
+
+h1 {
     background-color: red;
     font-size: xx-large;
 }
-p{
+
+p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    background-color: blue;
+    color: cornsilk;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
 }
