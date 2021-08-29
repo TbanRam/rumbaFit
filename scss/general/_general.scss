@@ -1,0 +1,63 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $colorFondoBody;
+    padding: 3%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.parent {
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-auto-columns: auto;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 0.6fr, 1fr, 1fr, 1fr, 0.3fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+@mixin footer{
+
+    grid-area: 5 / 1 / 6 / 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    align-items: stretch;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: $colorFondoFooter;
+    padding-bottom: 5%;
+
+}
+footer {
+    @include footer
+}
+@mixin header {
+    grid-template-rows: auto 1fr;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-display: center;
+    font-family: $FuenteLetra;
+    text-transform: uppercase;
+    word-spacing: 0.5em;
+    grid-area: 1 / 1 / 2 / 9;
+    ;
+    border: 9px groove F54748;
+    background-color: $colorFondoHeader;
+    font-size: 300%;
+    font-weight: 800px;
+    padding: 10%;
+}
+header{
+    @include header
+}

@@ -1,0 +1,17 @@
+aside {
+    grid-area: 2 / 1 / 5 / 3;
+    font-size: calc(0.5em + 1vw);
+    background-color: $colorFondoAside;
+}
+
+main {
+    grid-area: 2 / 3 / 5 / 9;
+    ;
+    text-align: center;
+    font-weight: bold;
+    width: auto;
+    font-size: calc(0.6em + 1vw);
+    background-color: $colorFondoMain;
+    width: 100%;
+    padding: 20px;
+}
